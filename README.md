@@ -21,6 +21,11 @@ PASS
 ok      github.com/xnslong/benchmark-go 14.955s
 ```
 
+```
+BenchmarkBasic/plus             557056796	±14421296	±2.158	±0.0589
+BenchmarkBasic/call_func        487230073	±15614368	±2.58	±0.1850
+```
+
 ### 栈调用与循环迭代的性能对比
 
 ```text
@@ -45,6 +50,12 @@ BenchmarkStack/C:stack2-8                2184256               553 ns/op
 BenchmarkStack/C:stack2-8                2155498               559 ns/op
 PASS
 ok      github.com/xnslong/benchmark-go 25.492s
+```
+
+```text
+BenchmarkStack/A:loop-8		2985556.4	±33438	400.8	±6.723
+BenchmarkStack/B:stack-8	2934119.2	±18418	409.2	±1.788
+BenchmarkStack/C:stack2-8	2170657.4	±18834	555.8	±3.271
 ```
 
 解释说明
